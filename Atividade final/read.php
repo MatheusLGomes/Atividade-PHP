@@ -21,6 +21,13 @@
     </div>
         <div class="row">
             <div class="col-md-6 mx-auto">
+
+                <?php 
+                    include 'model.php';
+                    $model = new Model();
+                    echo $id = $_REQUEST['id'];
+                ?>
+
                 <div class="card-hearder">
                     Nome
            </div>
