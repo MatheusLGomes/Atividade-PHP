@@ -62,6 +62,16 @@ class Model {
                     return false;
             }
     }
+    public function fecth_unico($id){
+        $data = null;
+        $query = "SELECT * FROM cadastros WHERE id = "$id";
+        if ($sql = $this->conn->query($query)) {
+           while($row = $sql->fetch_assoc()){
+           $data=row;
+           }
+        }
+
+        return $data;
 }
 
 ?>
